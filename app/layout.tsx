@@ -2,6 +2,7 @@ import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
+import Box from "@mui/material/Box";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
@@ -19,18 +20,19 @@ export default function RootLayout({
     <html className={rubik.className} lang="en">
       <body
         style={{
-          width: "100vw",
+          maxWidth: "100vw",
           height: "100%",
           backgroundImage: "url(/Background.jpg)",
           backgroundAttachment: "scroll",
           backgroundRepeat: "no-repeat",
           marginBlock: "30px",
-          marginInline: "20px",
-          display: "flex"
+          marginInline: "20px"
         }}
       >
-        <Sidebar />
-        {children}
+        <Box width={"100%"} display={"flex"}>
+          <Sidebar />
+          {children}
+        </Box>
       </body>
     </html>
   );
