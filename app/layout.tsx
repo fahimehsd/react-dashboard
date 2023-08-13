@@ -17,7 +17,18 @@ export default function RootLayout({
 }) {
   return (
     <html className={rubik.className} lang="en">
-      <body style={{ width: "100%", height: "100%" }}>
+      <body
+        style={{
+          width: "100vw",
+          height: "100%",
+          backgroundImage: "url(/Background.jpg)",
+          backgroundAttachment: "scroll",
+          backgroundRepeat: "no-repeat",
+          marginBlock: "30px",
+          marginInline: "20px",
+          display: "flex"
+        }}
+      >
         <Sidebar />
         {children}
       </body>

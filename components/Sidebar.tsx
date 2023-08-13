@@ -25,10 +25,7 @@ const Sidebar = () => {
         height: "95%",
         backgroundColor: "white",
         border: "1px solid black",
-
         borderRadius: "1rem",
-        marginBlock: "30px",
-        marginInline: "20px",
         paddingInline: "30px"
       }}
     >
