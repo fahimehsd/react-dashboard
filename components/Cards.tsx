@@ -51,7 +51,8 @@ const Cards = () => {
         display: "flex",
         alignContent: "center",
         gap: "40px",
-        marginTop: "40px"
+        marginTop: "40px",
+        width: "100%"
       }}
     >
       {cards.map((card) => (
@@ -64,7 +65,7 @@ const Cards = () => {
             display: "flex",
             alignItems: "start",
             justifyContent: "space-between",
-            width: "300px"
+            minWidth: "340px"
           }}
         >
           <Box>

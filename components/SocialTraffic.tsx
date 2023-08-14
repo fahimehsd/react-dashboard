@@ -92,7 +92,7 @@ const SocialTraffic = () => {
                   {row.visitors}
                 </TableCell>
                 <TableCell sx={{ fontWeight: "bolder" }} align="center">
-                  <Image src={row.img} alt="pic" width={150} height={20} />
+                  <Image src={row.img} alt="pic" width={150} height={15} />
                 </TableCell>
               </TableRow>
             ))}
