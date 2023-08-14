@@ -22,11 +22,13 @@ export default function RootLayout({
         style={{
           maxWidth: "100vw",
           height: "100%",
+
           backgroundImage: "url(/Background.jpg)",
           backgroundAttachment: "scroll",
           backgroundRepeat: "no-repeat",
           marginBlock: "30px",
-          marginInline: "20px"
+          marginInline: "20px",
+          backgroundColor: "#EBF8FF"
         }}
       >
         <Box width={"100%"} display={"flex"}>

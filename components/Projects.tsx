@@ -14,64 +14,58 @@ import React from "react";
 function createData(
   img: string,
   name: string,
-  position: string,
-  job: string,
+  budget: string,
   status: string,
-  edit: string,
-  employed: string
+  comp: string,
+  edit: string
 ) {
-  return { img, name, position, job, status, edit, employed };
+  return { img, name, budget, status, comp, edit };
 }
 
 const rows = [
   createData(
-    "/image.png",
-    "Esthera Jackson",
-    "Manager",
-    "Organization",
-    "online",
-    "Edit",
-    "14/06/21"
+    "/icon.png",
+    "Chakra Soft UI Version",
+    "$14,000",
+    "Working",
+    "/60p.png",
+    "/edit.png"
   ),
   createData(
-    "/image.png",
-    "Esthera Jackson",
-    "Manager",
-    "Organization",
-    "offline",
-    "Edit",
-    "14/06/21"
+    "/icon2.png",
+    "Add Progress Track",
+    "$3,000",
+    "Canceled",
+    "/10p.png",
+    "/edit.png"
   ),
   createData(
-    "/image.png",
-    "Esthera Jackson",
-    "Manager",
-    "Organization",
-    "online",
-    "Edit",
-    "14/06/21"
+    "/icon3.png",
+    "Fix Platform Errors",
+    "Not set",
+    "Done",
+    "/100p.png",
+    "/edit.png"
   ),
   createData(
-    "/image.png",
-    "Esthera Jackson",
-    "Manager",
-    "Organization",
-    "offline",
-    "Edit",
-    "14/06/21"
+    "/icon4.png",
+    "Launch our Mobile App",
+    "$32,000",
+    "Done",
+    "/100p.png",
+    "/edit.png"
   ),
   createData(
-    "/image.png",
-    "Esthera Jackson",
-    "Manager",
-    "Organization",
-    "offline",
-    "Edit",
-    "14/06/21"
+    "/icon5.png",
+    "Add the New Pricing Page",
+    "$400",
+    "Working",
+    "/25p.png",
+    "/edit.png"
   )
 ];
 
-const Authors = () => {
+const Projects = () => {
   return (
     <Box
       sx={{
@@ -82,21 +76,27 @@ const Authors = () => {
       }}
     >
       <Typography padding={"20px"} fontWeight={"bolder"} fontSize={"20px"}>
-        Authors Table
+        Projects
       </Typography>
+      <Box paddingLeft={"10px"} display={"flex"}>
+        <Image src={"/circle.png"} alt="check" width={20} height={20} />
+        <Typography color={"gray"} fontSize={"15px"}>
+          30 done this month
+        </Typography>
+      </Box>
 
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
             <TableRow>
               <TableCell sx={{ color: "gray", fontWeight: "bolder" }}>
-                AUTHOR
+                COMPANIES
               </TableCell>
               <TableCell
                 align="center"
                 sx={{ color: "gray", fontWeight: "bolder" }}
               >
-                FUNCTION
+                BUDGET
               </TableCell>
               <TableCell
                 align="center"
@@ -108,7 +108,7 @@ const Authors = () => {
                 align="center"
                 sx={{ color: "gray", fontWeight: "bolder" }}
               >
-                EMPLOYED
+                COMPLETION
               </TableCell>
               <TableCell></TableCell>
             </TableRow>
@@ -123,32 +123,18 @@ const Authors = () => {
                     gap: "5px"
                   }}
                 >
-                  <Image src={row.img} alt="pic" width={50} height={50} />
+                  <Image src={row.img} alt="pic" width={30} height={30} />
                   <Typography fontWeight="bold">{row.name}</Typography>
                 </TableCell>
 
+                <TableCell align="center">{row.budget}</TableCell>
+                <TableCell align="center">{row.status}</TableCell>
                 <TableCell align="center">
-                  <Typography fontWeight={"bolder"}>{row.position}</Typography>
-                  <Typography>{row.job}</Typography>
+                  <Image src={row.comp} alt="comp" width={150} height={30} />
                 </TableCell>
-                <TableCell align="center" width={80}>
-                  <Typography
-                    style={{
-                      backgroundColor:
-                        row.status === "online" ? "#48BB78" : "#CBD5E0",
-                      display: "flex",
-                      justifyContent: "center",
-                      width: "50px",
-                      padding: "5px",
-                      borderRadius: "10px",
-                      color: "white"
-                    }}
-                  >
-                    {row.status}
-                  </Typography>
+                <TableCell align="center">
+                  <Image src={row.edit} alt="edit" width={20} height={20} />
                 </TableCell>
-                <TableCell align="center">{row.employed}</TableCell>
-                <TableCell align="center">{row.edit}</TableCell>
               </TableRow>
             ))}
           </TableBody>
@@ -158,4 +144,4 @@ const Authors = () => {
   );
 };
 
-export default Authors;
+export default Projects;
