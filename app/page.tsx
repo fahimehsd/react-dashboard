@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import SalesOverview from "@/components/SalesOverview";
 import TotalOrders from "@/components/TotalOrders";
 import PageVisits from "@/components/PageVisits";
+import SocialTraffic from "@/components/SocialTraffic";
 
 const page = () => {
   return (
@@ -33,6 +34,7 @@ const page = () => {
           }}
         >
           <TotalOrders />
+          <SocialTraffic />
         </Box>
       </Box>
     </Box>
