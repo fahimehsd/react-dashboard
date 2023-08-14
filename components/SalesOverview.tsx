@@ -32,7 +32,7 @@ const SalesOverview = () => {
         height: "600px",
         borderRadius: "20px",
         padding: "20px",
-        width: "50%"
+        marginBottom: "70px"
       }}
     >
       <Typography fontWeight={"bolder"} mb={"10px"} color={"white"}>

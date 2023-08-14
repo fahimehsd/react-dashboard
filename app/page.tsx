@@ -7,23 +7,33 @@ import Box from "@mui/material/Box";
 import React, { useState } from "react";
 import SalesOverview from "@/components/SalesOverview";
 import TotalOrders from "@/components/TotalOrders";
+import PageVisits from "@/components/PageVisits";
 
 const page = () => {
   return (
     <Box sx={{ paddingInline: "15px", width: "100%" }}>
       <Header name="Dashboard" />
       <Cards />
-      <Box
-        sx={{
-          width: "100%",
-          display: "flex",
-          marginTop: "20px",
-          gap: "20px",
-          height: "100%"
-        }}
-      >
-        <SalesOverview />
-        <TotalOrders />
+      <Box display={"flex"} width={"100%"} gap={"40px"} mt={"20px"}>
+        <Box
+          sx={{
+            width: "60%",
+            gap: "20px",
+            height: "100%"
+          }}
+        >
+          <SalesOverview />
+          <PageVisits />
+        </Box>
+        <Box
+          sx={{
+            width: "60%",
+            gap: "20px",
+            height: "100%"
+          }}
+        >
+          <TotalOrders />
+        </Box>
       </Box>
     </Box>
   );

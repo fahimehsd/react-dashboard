@@ -22,8 +22,8 @@ const TotalOrders = () => {
         bgcolor: "white",
         borderRadius: "20px",
         padding: "10px",
-        width: "50%",
-        height: "600px"
+        height: "600px",
+        marginBottom: "70px"
       }}
     >
       <Typography color={"gray"} fontSize={"15px"} fontWeight={"bold"}>
