@@ -5,12 +5,13 @@ import React from "react";
 import WalletIcon from "@mui/icons-material/Wallet";
 import Square from "@/components/Square";
 import StoreIcon from "@mui/icons-material/Store";
+import Payment from "@/components/Payment";
 
 const page = () => {
   return (
     <Box sx={{ paddingInline: "15px", width: "100%" }}>
       <Header name="Billing" />
-      <Box mt={"40px"}>
+      <Box mt={"40px"} width={"65%"}>
         <Box sx={{ width: "100%", display: "flex", gap: "50px" }}>
           <CreditCard />
           <Square
@@ -40,8 +41,9 @@ const page = () => {
             price={"$455.00"}
           />
         </Box>
+        <Payment />
       </Box>
-      <Box></Box>
+      <Box width={"35%"}></Box>
     </Box>
   );
 };
