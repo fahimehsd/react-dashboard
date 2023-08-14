@@ -8,6 +8,7 @@ interface Data {
   bgColor?: string[];
   borderColor?: string[];
   borderWidth?: number;
+  outerWidth?: string;
 }
 interface Props {
   labels: string[];

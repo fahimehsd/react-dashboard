@@ -12,7 +12,7 @@ const page = () => {
     <Box sx={{ paddingInline: "15px", width: "100%" }}>
       <Header name="Dashboard" />
       <Cards />
-      <Box>
+      <Box sx={{ width: "100%" }}>
         <SalesOverview />
       </Box>
     </Box>
