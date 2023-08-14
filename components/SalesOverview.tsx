@@ -12,13 +12,15 @@ const SalesOverview = () => {
         label: "Mobile apps",
         backgroundColor: "rgb(202, 202, 202)",
         borderColor: "rgb(202, 202, 202)",
-        data: [50, 40, 300, 220, 500, 250, 400, 230, 500]
+        data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+        tension: 0.3
       },
       {
         label: "Websites",
         backgroundColor: "rgb(99, 172, 255)",
         borderColor: "rgb(99, 172, 255)",
-        data: [30, 90, 40, 140, 290, 290, 340, 230, 400]
+        data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+        tension: 0.3
       }
     ]
   };
@@ -29,8 +31,8 @@ const SalesOverview = () => {
           "linear-gradient(81.62deg, rgb(49, 56, 96) 2.25%, rgb(21, 25, 40) 79.87%)",
         height: "600px",
         borderRadius: "20px",
-        marginTop: "20px",
-        padding: "20px"
+        padding: "20px",
+        width: "50%"
       }}
     >
       <Typography fontWeight={"bolder"} mb={"10px"} color={"white"}>
