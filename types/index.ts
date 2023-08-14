@@ -14,3 +14,10 @@ interface Props {
   labels: string[];
   dataset: Data;
 }
+
+interface SquareProps {
+  icon: any;
+  title: string;
+  desc: string;
+  price: string;
+}
