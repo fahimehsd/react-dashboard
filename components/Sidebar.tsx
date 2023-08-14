@@ -78,6 +78,7 @@ const Sidebar = () => {
             gap: "5px",
             marginBottom: "20px"
           }}
+          href="/"
         >
           <HomeIcon
             sx={{
@@ -112,6 +113,7 @@ const Sidebar = () => {
             gap: "5px",
             marginBottom: "20px"
           }}
+          href="/tables"
         >
           <BarChartIcon
             sx={{
@@ -146,6 +148,7 @@ const Sidebar = () => {
             gap: "5px",
             marginBottom: "20px"
           }}
+          href="/billing"
         >
           <CreditCardIcon
             sx={{
@@ -190,6 +193,7 @@ const Sidebar = () => {
             gap: "5px",
             marginBottom: "20px"
           }}
+          href="/profile"
         >
           <PersonIcon
             sx={{
@@ -224,6 +228,7 @@ const Sidebar = () => {
             gap: "5px",
             marginBottom: "20px"
           }}
+          href="/signIn"
         >
           <AssignmentIcon
             sx={{
@@ -258,6 +263,7 @@ const Sidebar = () => {
             gap: "5px",
             marginBottom: "20px"
           }}
+          href="signUp"
         >
           <RocketLaunchIcon
             sx={{
